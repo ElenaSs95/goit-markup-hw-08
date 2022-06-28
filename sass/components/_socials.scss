@@ -1,0 +1,42 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--px-left-right);
+  &__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+    }
+    &--bgcolor-transition {
+      background-color: #ffffff;
+      color: var(--icon-color);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--color-transition {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--primary-white-color);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}

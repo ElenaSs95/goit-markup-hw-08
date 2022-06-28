@@ -1,0 +1,30 @@
+.progects {
+  display: flex;
+  margin-left: calc(-1 * var(--px-left-right));
+  &__item {
+    position: relative;
+    flex-basis: calc(100% / 3 - var(--px-left-right));
+    margin-left: var(--px-left-right);
+  }
+
+  &__thumb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__title {
+    @include font(null, 14px, 1.14);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--text-color);
+  }
+}

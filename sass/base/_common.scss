@@ -1,0 +1,19 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: var(--font-main);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.background {
+  background-color: var(--section-our-team-color);
+}

@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--px-left-right));
+  &__title {
+    margin-bottom: 10px;
+    @include font(700, 14px, 1.14);
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  &__item {
+    width: 270px;
+    flex-basis: calc(100% / 4 - var(--px-left-right));
+    margin-left: var(--px-left-right);
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--px-left-right);
+    height: 120px;
+    background-color: var(--section-our-team-color);
+    border-radius: 4px;
+  }
+  &__text {
+    line-height: 1.71;
+  }
+}

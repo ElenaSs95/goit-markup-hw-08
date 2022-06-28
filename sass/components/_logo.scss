@@ -1,0 +1,18 @@
+.logo {
+  font-family: var(--font-secondary);
+  @include font(700, 26px, 1.19);
+  &--margin-color {
+    margin-right: 93px;
+    color: var(--logo-color);
+  }
+
+  &--footer {
+    color: var(--primary-white-color);
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__part {
+    color: var(--accent-color);
+  }
+}
