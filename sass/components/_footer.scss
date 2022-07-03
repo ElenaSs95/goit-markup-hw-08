@@ -4,12 +4,31 @@
   background-color: var(--hero-footer-color);
 }
 .main-foo {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .join {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+  }
+  @include desktop {
+    margin-left: 70px;
+  }
+
   &__title {
     margin-bottom: 20px;
     font-size: 14px;
@@ -31,11 +50,14 @@
   }
   &__contacts {
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 8px;
     font-style: normal;
     line-height: 1.71;
     color: var(--address-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include tablet {
+      margin-top: 9px;
+    }
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -44,7 +66,17 @@
 }
 
 .subscribe {
-  margin-left: auto;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin: 60px 152px 60px 166px;
+  }
+  @include desktop {
+    text-align: left;
+    margin-left: auto;
+  }
+
   &__title {
     @include font(700, 14px, 1.14);
     margin-bottom: 20px;
@@ -55,10 +87,19 @@
 
 .subscribe-form {
   position: relative;
-  display: flex;
-  justify-content: center;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
+
   &__input {
-    width: 358px;
+    margin-bottom: 20px;
+    width: 100%;
+    @include desktop {
+      margin-bottom: 0;
+      width: 358px;
+    }
+
     height: 50px;
     padding-left: 15px;
     background-color: transparent;
@@ -77,10 +118,13 @@
   }
   &__label {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 16px;
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include desktop {
+      top: 50%;
+    }
     .subscribe-form__input:focus + &,
     .subscribe-form__input:not(:placeholder-shown) + & {
       transform: translateY(-40px);
@@ -93,7 +137,12 @@
   align-items: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop {
+    margin-left: 12px;
+  }
   @include font(700, 16px, 1.88);
   letter-spacing: 0.06em;
   background: var(--accent-color);

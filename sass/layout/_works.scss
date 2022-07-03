@@ -1,11 +1,25 @@
 .works-nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
   &__item {
-    margin-left: 8px;
+    @include desktop {
+      margin-left: 8px;
+    }
+
     &:first-child {
-      margin-left: 0;
+      @include desktop {
+        margin-left: 0;
+      }
     }
   }
 
@@ -18,14 +32,13 @@
     cursor: pointer;
     background-color: var(--section-our-team-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       color: var(--primary-white-color);
       background-color: var(--accent-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     }
   }
 }
@@ -33,22 +46,38 @@
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--px-left-right));
-  margin-top: calc(-1 * var(--px-left-right));
-  padding-bottom: var(--px-top-bottom);
+  gap: var(--px-left-right);
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: var(--px-top-bottom);
+  }
+
   &__item {
-    flex-basis: calc(100% / 3 - var(--px-left-right));
-    margin-left: var(--px-left-right);
-    margin-top: var(--px-left-right);
+    width: 100%;
+    gap: var(--px-left-right);
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 60px) / 3);
+    }
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
   &__link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -73,10 +102,12 @@
 }
 
 .progect-item {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
   &__title {
     margin-bottom: 4px;
     @include font(700, 18px, 2);

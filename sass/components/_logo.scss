@@ -1,8 +1,11 @@
 .logo {
   font-family: var(--font-secondary);
-  @include font(700, 26px, 1.19);
+  @include font(700, 24px, 1.16);
+  @include desktop {
+    @include font(700, 26px, 1.19);
+  }
+
   &--margin-color {
-    margin-right: 93px;
     color: var(--logo-color);
   }
 

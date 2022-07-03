@@ -33,9 +33,7 @@
               <a href="" class="navigation__link link current">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="navigation__link link">Портфолио</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link link">Контакты</a>
@@ -58,6 +56,61 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link current">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__tel link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-contacts__mail link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc list">
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Instagram</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Twitter</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Facebook</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -69,9 +122,7 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button type="button" class="hero__button" data-modal-open>
-              Заказать услугу
-            </button>
+            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
           </div>
         </section>
       </div>
@@ -88,8 +139,7 @@
               </div>
               <h3 class="features__title">Внимание к деталям</h3>
               <p class="features__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="features__item">
@@ -100,8 +150,7 @@
               </div>
               <h3 class="features__title">Пунктуальность</h3>
               <p class="features__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="features__item">
@@ -112,8 +161,7 @@
               </div>
               <h3 class="features__title">Планирование</h3>
               <p class="features__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="features__item">
@@ -124,21 +172,21 @@
               </div>
               <h3 class="features__title">Современные технологии</h3>
               <p class="features__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
       <!-- Секция 3 -->
-      <section class="section">
+      <section class="section progects-thumb">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="progects list">
             <li class="progects__item">
               <img
-                src="images/box-1.jpg"
+                srcset="./images/1-progects-1x.jpg 1x, ./images/1-progects-2x.jpg 2x"
+                src="images/1-progects-1x.jpg"
                 alt="Человек, который печатает на компьютере"
                 width="370"
               />
@@ -148,7 +196,8 @@
             </li>
             <li class="progects__item">
               <img
-                src="images/box-2.jpg"
+                srcset="./images/2-progects-1x.jpg 1x, ./images/2-progects-2x.jpg 2x"
+                src="images/2-progects-1x.jpg"
                 alt="Человек с телефоном в руке за компьютером"
                 width="370"
               />
@@ -158,7 +207,8 @@
             </li>
             <li class="progects__item">
               <img
-                src="images/box-3.jpg"
+                srcset="./images/3-progects-1x.jpg 1x, ./images/3-progects-2x.jpg 2x"
+                src="images/3-progects-1x.jpg"
                 alt="Человек работающий на планшете за столом"
                 width="370"
               />
@@ -176,7 +226,21 @@
           <ul class="our-team list">
             <li class="our-team__item">
               <div class="our-team__tumb">
-                <img src="images/img.jpg" alt="" width="270" />
+                <picture>
+                  <source
+                    srcset="./images/1-team-desk-1x.jpg 1x, ./images/1-team-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/1-team-tab-1x.jpg 1x, ./images/1-team-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/1-team-mob-1x.jpg 1x, ./images/1-team-mob-2x.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/1-team-mob-1x.jpg" alt="" width="270" />
+                </picture>
               </div>
               <div class="profile">
                 <h3 class="profile__name">Игорь Демьяненко</h3>
@@ -184,40 +248,28 @@
               </div>
               <ul class="socials list">
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-3"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-4"></use>
                     </svg>
@@ -227,7 +279,21 @@
             </li>
             <li class="our-team__item">
               <div class="our-team__tumb">
-                <img src="images/img-1.jpg" alt="" width="270" />
+                <picture>
+                  <source
+                    srcset="./images/2-team-desk-1x.jpg 1x, ./images/2-team-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/2-team-tab-1x.jpg 1x, ./images/2-team-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/2-team-mob-1x.jpg 1x, ./images/2-team-mob-2x.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/2-team-mob-1x.jpg" alt="" width="270" />
+                </picture>
               </div>
               <div class="profile">
                 <h3 class="profile__name">Ольга Репина</h3>
@@ -235,40 +301,28 @@
               </div>
               <ul class="socials list">
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-3"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-4"></use>
                     </svg>
@@ -278,7 +332,21 @@
             </li>
             <li class="our-team__item">
               <div class="our-team__tumb">
-                <img src="images/img-2.jpg" alt="" width="270" />
+                <picture>
+                  <source
+                    srcset="./images/3-team-desk-1x.jpg 1x, ./images/3-team-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/3-team-tab-1x.jpg 1x, ./images/3-team-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/3-team-mob-1x.jpg 1x, ./images/3-team-mob-2x.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/3-team-mob-1x.jpg" alt="" width="270" />
+                </picture>
               </div>
               <div class="profile">
                 <h3 class="profile__name">Николай Тарасов</h3>
@@ -286,40 +354,28 @@
               </div>
               <ul class="socials list">
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-3"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-4"></use>
                     </svg>
@@ -329,7 +385,21 @@
             </li>
             <li class="our-team__item">
               <div class="our-team__tumb">
-                <img src="images/img-3.jpg" alt="" width="270" />
+                <picture>
+                  <source
+                    srcset="./images/4-team-desk-1x.jpg 1x, ./images/4-team-desk-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/4-team-tab-1x.jpg 1x, ./images/4-team-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/4-team-mob-1x.jpg 1x, ./images/4-team-mob-2x.jpg 2x"
+                    media="(min-width: 480px)"
+                  />
+                  <img src="./images/4-team-mob-1x.jpg" alt="" width="270" />
+                </picture>
               </div>
               <div class="profile">
                 <h3 class="profile__name">Михаил Ермаков</h3>
@@ -337,40 +407,28 @@
               </div>
               <ul class="socials list">
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-2"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-3"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a
-                    href=""
-                    class="socials__link socials__link--bgcolor-transition link"
-                  >
+                  <a href="" class="socials__link socials__link--bgcolor-transition link">
                     <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-4"></use>
                     </svg>
@@ -383,7 +441,7 @@
       </section>
       <!-- Секция 5 -->
       <section class="section">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients list">
             <li class="clients__item">
@@ -456,9 +514,7 @@
                 >
               </li>
               <li class="address__item">
-                <a class="address__contacts link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+                <a class="address__contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -467,40 +523,28 @@
           <h2 class="join__title">Присоединяйтесь</h2>
           <ul class="socials list">
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-1"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-2"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-3"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-4"></use>
                 </svg>
@@ -571,11 +615,7 @@
           </div>
           <div class="checkbox">
             <label class="policy"
-              ><input
-                type="checkbox"
-                name="policy"
-                class="policy__text visually-hidden"
-              />
+              ><input type="checkbox" name="policy" class="policy__text visually-hidden" />
               <span class="policy__icon"></span>
               Соглашаюсь с рассылкой и принимаю
               <a href="" class="policy__part"> Условия договора</a>
@@ -593,5 +633,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

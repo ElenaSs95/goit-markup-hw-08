@@ -56,6 +56,61 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link current">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__tel link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-contacts__mail link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc list">
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Instagram</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Twitter</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Facebook</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Основной контент -->
@@ -71,9 +126,7 @@
               <button type="button" class="works-nav__button">Веб-сайты</button>
             </li>
             <li class="works-nav__item">
-              <button type="button" class="works-nav__button">
-                Приложения
-              </button>
+              <button type="button" class="works-nav__button">Приложения</button>
             </li>
             <li class="works-nav__item">
               <button type="button" class="works-nav__button">Дизайн</button>
@@ -86,15 +139,25 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images.jpg"
-                    alt="Открытый ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images1-desk-1x.jpg 1x, ./images/images1-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images1-tab-1x.jpg 1x, ./images/images1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images1-mob-1x.jpg 1x, ./images/images1-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/images1-mob-1x.jpg" alt="Открытый ноутбук" width="370" />
+                  </picture>
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
@@ -107,15 +170,29 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-1.jpg"
-                    alt="Два баскетболиста с мячем"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images2-desk-1x.jpg 1x, ./images/images2-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images2-tab-1x.jpg 1x, ./images/images2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images2-mob-1x.jpg 1x, ./images/images2-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/images2-mob-1x.jpg"
+                      alt="Два баскетболиста с мячем"
+                      width="370"
+                    />
+                  </picture>
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
@@ -130,22 +207,34 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-2.jpg"
-                    alt="Эмблема акулы с надписью названия ресторана"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images3-desk-1x.jpg 1x, ./images/images3-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images3-tab-1x.jpg 1x, ./images/images3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images3-mob-1x.jpg 1x, ./images/images3-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/images3-mob-1x.jpg"
+                      alt="Эмблема акулы с надписью названия ресторана"
+                      width="370"
+                    />
+                  </picture>
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
                 <div class="progect-item">
-                  <h2 class="progect-item__title">
-                    Ресторан <span lang="en"> Seafood</span>
-                  </h2>
+                  <h2 class="progect-item__title">Ресторан <span lang="en"> Seafood</span></h2>
                   <p class="progect-item__text">Приложение</p>
                 </div></a
               >
@@ -153,22 +242,34 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-3.jpg"
-                    alt="Безпроводные наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images4-desk-1x.jpg 1x, ./images/images4-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images4-tab-1x.jpg 1x, ./images/images4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images4-mob-1x.jpg 1x, ./images/images4-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/images4-mob-1x.jpg"
+                      alt="Безпроводные наушники"
+                      width="370"
+                    />
+                  </picture>
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
                 <div class="progect-item">
-                  <h2 class="progect-item__title">
-                    Проект <span lang="en">Prime</span>
-                  </h2>
+                  <h2 class="progect-item__title">Проект <span lang="en">Prime</span></h2>
                   <p class="progect-item__text">Маркетинг</p>
                 </div></a
               >
@@ -176,22 +277,35 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-4.jpg"
-                    alt="Две коробки: большая белая и маленькая коричневая"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images5-desk-1x.jpg 1x, ./images/images5-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images5-tab-1x.jpg 1x, ./images/images5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images5-mob-1x.jpg 1x, ./images/images5-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/images5-mob-1x.jpg"
+                      alt="Две коробки: большая белая и маленькая коричневая"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
                 <div class="progect-item">
-                  <h2 class="progect-item__title">
-                    Проект <span lang="en">Boxes</span>
-                  </h2>
+                  <h2 class="progect-item__title">Проект <span lang="en">Boxes</span></h2>
                   <p class="progect-item__text">Приложение</p>
                 </div></a
               >
@@ -199,22 +313,31 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-5.jpg"
-                    alt="Монитор компьтера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images6-desk-1x.jpg 1x, ./images/images6-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images6-tab-1x.jpg 1x, ./images/images6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images6-mob-1x.jpg 1x, ./images/images6-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/images6-mob-1x.jpg" alt="Монитор компьтера" width="370" />
+                  </picture>
+
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
                 <div class="progect-item">
-                  <h2 class="progect-item__title" lang="en">
-                    Inspiration has no Borders
-                  </h2>
+                  <h2 class="progect-item__title" lang="en">Inspiration has no Borders</h2>
                   <p class="progect-item__text">Веб-сайт</p>
                 </div></a
               >
@@ -222,15 +345,26 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-6.jpg"
-                    alt="Открытая книга"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images7-desk-1x.jpg 1x, ./images/images7-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images7-tab-1x.jpg 1x, ./images/images7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images7-mob-1x.jpg 1x, ./images/images7-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/images7-mob-1x.jpg" alt="Открытая книга" width="370" />
+                  </picture>
+
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
@@ -245,22 +379,31 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-7.jpg"
-                    alt="Белая бирка"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images8-desk-1x.jpg 1x, ./images/images8-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images8-tab-1x.jpg 1x, ./images/images8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images8-mob-1x.jpg 1x, ./images/images8-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/images8-mob-1x.jpg" alt="Белая бирка" width="370" />
+                  </picture>
+
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
                 <div class="progect-item">
-                  <h2 class="progect-item__title">
-                    Проект <span lang="en">LAB</span>
-                  </h2>
+                  <h2 class="progect-item__title">Проект <span lang="en">LAB</span></h2>
                   <p class="progect-item__text">Маркетинг</p>
                 </div></a
               >
@@ -268,22 +411,35 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/images-8.jpg"
-                    alt="Человек, печатающий на ноутбуке"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/images9-desk-1x.jpg 1x, ./images/images9-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/images9-tab-1x.jpg 1x, ./images/images9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/images9-mob-1x.jpg 1x, ./images/images9-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/images9-mob-1x.jpg"
+                      alt="Человек, печатающий на ноутбуке"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
                 </div>
 
                 <div class="progect-item">
-                  <h2 class="progect-item__title" lang="en">
-                    Growing Business
-                  </h2>
+                  <h2 class="progect-item__title" lang="en">Growing Business</h2>
                   <p class="progect-item__text">Приложение</p>
                 </div></a
               >
@@ -316,9 +472,7 @@
                 >
               </li>
               <li class="address__item">
-                <a class="address__contacts link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+                <a class="address__contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -327,40 +481,28 @@
           <h2 class="join__title">Присоединяйтесь</h2>
           <ul class="socials list">
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-1"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-2"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-3"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a
-                href=""
-                class="socials__link socials__link--color-transition link"
-              >
+              <a href="" class="socials__link socials__link--color-transition link">
                 <svg class="socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-4"></use>
                 </svg>
@@ -389,5 +531,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
