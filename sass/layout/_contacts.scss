@@ -31,7 +31,12 @@
     }
   }
   & .contacts__item + .contacts__item {
+    @include tablet {
+      margin-top: 10px;
+    }
+
     @include desktop {
+      margin-top: 0;
       margin-left: 50px;
     }
   }

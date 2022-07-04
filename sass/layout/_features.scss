@@ -5,10 +5,14 @@
   width: 100%;
 
   &__title {
+    text-align: center;
     margin-bottom: 10px;
     @include font(700, 14px, 1.14);
     text-transform: uppercase;
     color: var(--title-text-color);
+    @include tablet {
+      text-align: left;
+    }
   }
   &__item {
     @include tablet {

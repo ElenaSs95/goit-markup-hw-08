@@ -112,12 +112,13 @@ textarea {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--title-text-color);
 }
 @media screen and (min-width: 1200px) {
   .section__title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -399,13 +400,14 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-foo {
+    text-align: left;
     display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
   }
 }
 
@@ -417,7 +419,6 @@ textarea {
   .join {
     margin-bottom: 0;
     margin-top: 0;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -465,7 +466,7 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe {
     width: 450px;
-    margin: 60px 152px 60px 166px;
+    margin: 60px 152px 0 166px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -773,15 +774,21 @@ textarea {
     margin-right: 10px;
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts .contacts__item + .contacts__item {
+    margin-top: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts .contacts__item + .contacts__item {
+    margin-top: 0;
     margin-left: 50px;
   }
 }
 
 .hero {
-  padding-top: 218px;
-  padding-bottom: 218px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-1x.jpg);
   background-color: var(--hero-footer-color);
@@ -796,8 +803,6 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-1x.jpg);
   }
 }
@@ -808,6 +813,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    margin: 0 auto;
     height: 600px;
     max-width: 1600px;
     padding-top: 200px;
@@ -860,12 +866,18 @@ textarea {
   width: 100%;
 }
 .features__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -1044,12 +1056,12 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .works-nav {
+    justify-content: center;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .works-nav {
-    justify-content: center;
     margin-bottom: 50px;
   }
 }
